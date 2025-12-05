@@ -1,10 +1,9 @@
-# Folder structure
-
+### Folder structure
 ```
 mon projet/ 
 ├── backend
 │   ├── modules
-│   │   └── 
+│   │   └── df_tools.py
 │   ├── data
 │   │   └── 
 │   └── main.py
@@ -16,3 +15,8 @@ mon projet/
 ├── .venv
 └── .gitignore
 ```
+
+### BDD "quotes_db.csv"
+
+- `id`
+- `text`

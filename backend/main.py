@@ -21,14 +21,13 @@ if __name__ == "__main__":
         port = os.getenv("FAST_API_PORT")
         port = int(port)
         host = os.getenv("HOST")
-        #host = 'http://127.0.0.1'
     except ValueError:
         print('ERROR')
         port = 8080
-        host = 'http://127.0.0.1'
-    print(port)
-    print(host)
+        host = '127.0.0.1'
+
     uvicorn.run("main:app",
                 host=host,
                 port=port,
-                reload=True)
+                reload=True,
+                log_level="debug")

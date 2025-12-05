@@ -2,6 +2,7 @@
 import streamlit as st
 import requests
 import os
+from dotenv import load_dotenv
 
 API_ROOT_URL = f"http://127.0.0.1:{os.getenv('FAST_API_PORT', '8000')}"
 

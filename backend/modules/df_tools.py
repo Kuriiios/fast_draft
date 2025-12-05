@@ -2,7 +2,6 @@
 import pandas as pd
 import streamlit as st
 import os
-from pydantic import BaseModel
 from loguru import logger
 
 CSV_FILE_PATH = os.path.join("backend","data","quotes_db.csv")
@@ -24,4 +23,4 @@ def initialize_db():
         logger.info('New db created')
 
 
-initialize_db()
+#initialize_db()
